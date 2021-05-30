@@ -36,11 +36,12 @@
 
 
     <div class="content">
-
+    @yield('content')
     </div>
     <div class="sidebar">
         <p><h3>Sidebar content</h3></p>
         @include('inc2.sidebar2')
+        @yield('content2')
     </div>
     <div class="footer">Footer</div>
 
