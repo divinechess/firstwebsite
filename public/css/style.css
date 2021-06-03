@@ -1,32 +1,23 @@
 a{
     height:20px;
     width:50px;
-    background-color:#e8491d;
     position:relative;
     left:0;
     right:0;
-    top:0;
-    bottom:0;
-    font-size:15px;
-    padding:10px;
-    color:black;
-    text-decoration:none;
+    top:11px;
+    bottom:0px;
+    font-size:20px;
+    padding:1px;
+    color:white;
+    text-decoration: none;
     border-radius:5px;
-    box-shadow: 0px 10px 0px #c53b14, 0px 8px 20px #222222;
-    transition: all 0.2 ease;
+
 
 }
 
-p{
-    border: 1px solid black;
-
-}
-
-
-
-a:active{
-    box-shadow:none;
-    top:10px;
+#title{
+    border-style: none;
+    margin-bottom: 0px;
 }
 
 
@@ -39,21 +30,27 @@ a:active{
 
 
 .highlight{
+    color:red;
+}
+
+
+#highlight2{
     color:white;
 }
 
+.dummytxt{
+    border-style:none;
+}
 
 .content{
     grid-area:c;
     background:#D7DDDF;
-
-
 }
+
+
 .sidebar{
     grid-area:s;
     background:#D7DDDF;
-
-
 }
 
 
@@ -61,7 +58,9 @@ a:active{
 .footer{
     grid-area:f;
     background:grey;
-
+    margin-top: 15px;
+    padding: 20px;
+    color: white;
 }
 
 .container{

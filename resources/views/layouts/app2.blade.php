@@ -22,7 +22,7 @@
 <div class="container">
        <div class="header">
 
-        <h1 class="highlight">John's first Laravel website </h1>
+           <h1 id="title"><span class="highlight">John's</span> <span id="highlight2"> first Laravel website</span></h1>
            <div>
                <a class="nav-link active" aria-current="page" href="/">Home</a>
                <a class="nav-link" href="/about">About</a>
@@ -36,14 +36,19 @@
 
 
     <div class="content">
+        @include('inc2.messages')
+        @if(Request::is('/'))
+            @include('inc2.showcase')
+        @endif
     @yield('content')
+
     </div>
     <div class="sidebar">
         <p><h3>Sidebar content</h3></p>
         @include('inc2.sidebar2')
         @yield('content2')
     </div>
-    <div class="footer">Footer</div>
+    <div class="footer">Copyright 2021 &copy; Acme</div>
 
 </div>
 

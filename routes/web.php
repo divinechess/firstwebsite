@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\MessagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +24,7 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+// Route::post('/contact/submit','MessagesController@submit'); old version format
+// Route::post('/contact/show2', [MessagesController::class, 'show']);
+Route::post('/contact.submit', [MessagesController::class, 'submit']);
