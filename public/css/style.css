@@ -14,6 +14,9 @@ a{
 
 
 }
+.alert-danger{
+    color:red;
+}
 
 #title{
     border-style: none;
@@ -64,6 +67,11 @@ a{
 }
 
 .container{
+    margin: 0;
+    padding: 0;
+
+
+
     display:grid;
     grid-template:repeat(3, 100px auto 100px) / repeat(12, 1fr);
 
@@ -72,6 +80,11 @@ a{
 "h h h h h h h h h h h h"
 "c c c c c c c c c c s s"
 "f f f f f f f f f f f f";
+
+
+}
+body {
+    margin: 0;
 }
 
 
