@@ -13,18 +13,14 @@ use App\Http\Controllers\MessagesController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [\App\Http\Controllers\PagesController::class, 'getHome']);
+Route::get('/about', [\App\Http\Controllers\PagesController::class, 'getAbout']);
+Route::get('/contact', [\App\Http\Controllers\PagesController::class, 'getContact']);
 
-Route::get('/about', function () {
-    return view('about');
-});
 
-Route::get('/contact', function () {
-    return view('contact');
-});
 
 // Route::post('/contact/submit','MessagesController@submit'); old version format
 // Route::post('/contact/show2', [MessagesController::class, 'show']);
 Route::post('/contact.submit', [MessagesController::class, 'submit']);
+Route::get('/messages', [MessagesController::class, 'getMessages']);
+

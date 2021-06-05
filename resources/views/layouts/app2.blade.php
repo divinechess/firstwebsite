@@ -22,11 +22,12 @@
 <div class="container">
        <div class="header">
 
-           <h1 id="title"><span class="highlight">John's</span> <span id="highlight2"> first Laravel website</span></h1>
+           <h1 id="title"><span class="highlight">John's</span> <span id="highlight2">first Laravel website</span></h1>
            <div>
-               <a class="nav-link active" aria-current="page" href="/">Home</a>
-               <a class="nav-link" href="/about">About</a>
-               <a class="nav-link" href="/contact">Contact</a>
+               <a class="{{Request::is  ('/') ?'active' :'' }}" href="/">Home</a>
+               <a class="{{Request::is  ('/about') ?'active' :'' }}"  href="/about">About</a>
+               <a class="{{Request::is  ('contact') ?'active' :'' }}"  href="/contact">Contact</a>
+
 
            </div>
 
